@@ -98,7 +98,8 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-    background: #f3eeea;
+    background: green;
+    /*background: #f3eeea;*/
 	line-height: 1;
 }
 ol, ul {
