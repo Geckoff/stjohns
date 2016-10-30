@@ -611,6 +611,14 @@ input, textarea {
     opacity: 0;
 }
 
+.main-block-a h2 {
+    transition-duration: 0.3s;
+}
+
+.main-block-a:hover h2 {
+    color: #db1919;
+}
+
 .main-block-a img {
     transition-duration: 0.3s;
 }
