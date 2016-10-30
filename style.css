@@ -98,8 +98,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-    background: green;
-    /*background: #f3eeea;*/
+    background: #f3eeea;
 	line-height: 1;
 }
 ol, ul {
@@ -207,6 +206,7 @@ h1, h2, h3, h4, h5 {
     /*line-height: 4vw;*/
     line-height: 55px;
     color: #01899d;
+    transition-duration: 0.3s;
 }
 
 .upper-block ul.menu li a:hover {
@@ -384,6 +384,7 @@ ul.sub-menu li a{
     text-decoration: underline;
     margin-bottom: 20px;
     padding-top: 2px;
+    transition-duration: 0.3s;
 }
 
 .news h3:hover {
@@ -395,6 +396,10 @@ ul.sub-menu li a{
     text-align: center;
     font: 24pt "aavantebs";
     margin-top: 20px;
+}
+
+.news .pagination a {
+    transition-duration: 0.3s;
 }
 
 .news .pagination a:hover, .news .pagination span {
@@ -594,7 +599,7 @@ input, textarea {
     color: #fff;
     margin-top: 7px;
     margin-left: -1px;
-
+    transition-duration: 0.3s;
 }
 
 .main-block h2 a:hover {
@@ -664,6 +669,7 @@ input, textarea {
     line-height: 18pt;
     text-decoration: underline;
     margin-bottom: 10px;
+    transition-duration: 0.3s;
 }
 
 .main-news h3:hover {
@@ -817,6 +823,7 @@ input, textarea {
 .footer-main .footer-content ul li a {
     font: 12pt "ptsans";
     color: #fff;
+    transition-duration: 0.3s;
 }
 
 .footer-main .footer-content ul li a:hover {
