@@ -1,0 +1,888 @@
+/*
+Theme Name: St. Matthew Medical Clinic
+Theme URI: https://fpro.by
+Author: Andrei Hetsevich
+Author URI: https://fpro.by
+Description: St. Matthew Medical Clinic Responsive Templeate
+Version: 1.0
+*/
+
+/* Eric Meyer's CSS Reset */
+
+@font-face {
+    font-family: 'aavantebs';
+    src: url('fonts/aavantebs-webfont.eot');
+    src: url('fonts/aavantebs-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/aavantebs-webfont.woff2') format('woff2'),
+         url('fonts/aavantebs-webfont.woff') format('woff'),
+         url('fonts/aavantebs-webfont.ttf') format('truetype'),
+         url('fonts/aavantebs-webfont.svg#pt_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'aavantebs';
+    src: url('fonts/aavantebs_extrabold-webfont.eot');
+    src: url('fonts/aavantebs_extrabold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/aavantebs_extrabold-webfont.woff2') format('woff2'),
+         url('fonts/aavantebs_extrabold-webfont.woff') format('woff'),
+         url('fonts/aavantebs_extrabold-webfont.ttf') format('truetype'),
+         url('fonts/aavantebs_extrabold-webfont.svg#pt_sansregular') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'aavantebs';
+    src: url('fonts/aavantebs_italic-webfont.eot');
+    src: url('fonts/aavantebs_italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/aavantebs_italic-webfont.woff2') format('woff2'),
+         url('fonts/aavantebs_italic-webfont.woff') format('woff'),
+         url('fonts/aavantebs_italic-webfont.ttf') format('truetype'),
+         url('fonts/aavantebs_italic-webfont.svg#pt_sansregular') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'ptsans';
+    src: url('fonts/pt-sans-webfont.eot');
+    src: url('fonts/pt-sans-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/pt-sans-webfont.woff2') format('woff2'),
+         url('fonts/pt-sans-webfont.woff') format('woff'),
+         url('fonts/pt-sans-webfont.ttf') format('truetype'),
+         url('fonts/pt-sans-webfont.svg#pt_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+p {
+    font: 14pt 'ptsans';    
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+strong {
+    font-weight: bold;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    background: #f3eeea;
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* End of Eric Meyer's CSS Reset */
+
+html {
+    background: #f3eeea;
+	height: 100%;
+
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+	display: block;
+}
+body {
+	font: 12px/18px Arial, sans-serif;
+	height: 100%;
+    outline: none;
+}
+.wrapper {
+	width: 100%;
+	min-width: 1000px;
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'aavantebs';
+    color: #01899d;
+    font-weight: bold;
+}
+
+/* Header
+-----------------------------------------------------------------------------*/
+.header {
+	background: #01899d;
+    color: #01899d;
+    font-family: "aavantebs";
+}
+
+.not-main {
+/*    background: #01899d url(img/not-main-bg.jpg)  repeat-x 0 239%;*/
+}
+
+.header-content {
+    z-index: 3;
+    position: relative;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.upper-block {
+    background: #01899d;
+    border-top: 1px solid transparent;
+}
+
+.upper-block .logo {
+    position: absolute;
+    left: 20px;
+}
+
+.upper-block .logo-name {
+    display: block;
+    position: relative;
+    margin: 36px 0 0 125px;
+}
+
+/*---------HEADER MENU------------*/
+
+.upper-block ul.menu {
+
+    border: none;
+    outline: none;
+    overflow: hidden;
+    background: #fff;
+    display: block;
+    padding: 0 0 0 136px;
+}
+
+.upper-block ul.menu li {
+    float: left;
+    /*font: 1.5vw "aavantebs";
+    padding-right: 2vw;*/
+    text-transform: uppercase;
+    font: 16pt "aavantebs";
+    padding-right: 22px;
+}
+
+.upper-block ul.menu li a {
+    /*line-height: 4vw;*/
+    line-height: 55px;
+    color: #01899d;
+}
+
+.upper-block ul.menu li a:hover {
+    color: #db1919;
+}
+
+ul.sub-menu{
+    position: absolute;
+    z-index: 5;
+    background: #fff;
+    display: none;
+    width:  !important;
+    left: 313px;
+}
+
+ul.sub-menu li{
+    float: none !important;
+    text-transform: none !important;
+    text-align: center;
+    margin: 0;
+    padding: 0 11px !important;
+}
+
+ul.sub-menu li a{
+    line-height: 45px !important;
+}
+
+.upper-block ul.menu li:hover ul.sub-menu {
+    display: block;
+}
+
+/*---------HEADER MENU END------------*/
+
+/*---------QUOTATION------------*/
+
+.quot-block {
+    position: absolute;
+    z-index: 3;
+    width: 410px;
+    font: italic 17pt/25pt "aavantebs";
+    padding: 15px 15px 12px 15px;
+    background: #01899d;
+    bottom: 35px;
+}
+
+.quot-block span {
+    color: #fff;
+    text-align: left;
+}
+
+.quot-block span:last-child {
+    display: block;
+    text-align: right;
+    font-style: normal;
+}
+
+/*---------QUOTATION END------------*/
+
+/*---------APPOINTMENT SCHEDULE------------*/
+
+.schedule {
+    background: url(img/schedule-bg.png);
+}
+
+.schedule p {
+    color: #01899d;
+    display: block;
+    width: 1000px;
+    margin: 0 auto;
+    font-size: 31pt;
+    line-height: 47pt;
+    text-align: center;
+    font-family: "aavantebs";
+}
+
+.schedule p span {
+    font-weight: bold;
+}
+
+/*---------APPOINTMENT SCHEDULE END------------*/
+
+
+
+/* Middle
+-----------------------------------------------------------------------------*/
+.content {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 35px 0 0 0;
+    /*padding: 2.5vw 0 100px 0; */
+    overflow: hidden;
+}
+
+.content h1, .footer h1 {
+    font-size: 29pt;
+    display: inline-block;
+    margin-bottom: 23px;
+}
+
+.content p, .footer p, .page ul, .page ol, .page label, .page input, .page textarea, .page div {
+	font: 12pt/15pt "ptsans";
+    margin-bottom: 20px;
+}
+
+.content a {
+	color:  #01899d;
+}
+
+/*---------FIND US NOT MAIN PAGE BLOCK------------*/
+
+.findus {
+    margin-bottom: 20px;
+}
+
+.findus img {
+    max-width: 20%;
+}
+
+.findus .inner-content {
+    overflow: hidden;
+}
+
+
+.findus img {
+    float: left;
+    margin-right: 20px;
+}
+
+
+
+/*---------FIND US NOT MAIN PAGE BLOCK END------------*/
+
+/*---------ARTICLE PAGE------------*/
+
+.news {
+    width: 100%;
+    float: left;
+    margin-bottom: 20px;
+}
+
+.news-block {
+    border-top: 3px dashed #f3eeea;
+    overflow: hidden;
+    margin-bottom: 20px;
+    padding-top: 20px;
+}
+
+.news-block:first-child {
+    border-top: none;
+    padding-top: 0;
+}
+
+.news-block:last-child {
+    margin-bottom: 0;
+}
+
+.news img {
+    margin-bottom: 0.7vw;
+    width: 20%;
+    float: left;
+    margin-right: 2.25%;
+}
+
+.news a img {
+    width: 10%;
+    float: right;
+    margin-right: 0;
+}
+
+.news h3, .news p {
+    width: 100%;
+}
+
+.news h3 {
+    font-weight: normal;
+    font-size: 20pt;
+    text-decoration: underline;
+    margin-bottom: 20px;
+    padding-top: 2px;
+}
+
+.news h3:hover {
+    text-decoration: none;
+    color: #db1919;
+}
+
+.news .pagination {
+    text-align: center;
+    font: 24pt "aavantebs";
+    margin-top: 20px;
+}
+
+.news .pagination a:hover, .news .pagination span {
+    color:  #db1919;
+}
+
+.news .date {
+    float: right;
+    font: 10pt "ptsans";
+    line-height: 20pt;
+    color: #ADADAD;
+}
+
+.news .pagination .prev, .news .pagination .next {
+    visibility: visible;
+}
+
+/*---------ARTICLE PAGE END------------*/
+
+/*---------PAGE------------*/
+
+.page {
+    margin-bottom: 33px;
+}
+
+.page  img {
+    margin: 0 20px 20px 0;
+}
+
+.page .alignleft {
+    float: left;
+}
+
+.page .alignright {
+    float: right;
+    margin: 0 0 20px 20px;
+}
+
+.page .aligncenter {
+    margin: 0 auto 20px;
+    display: block;
+}
+
+.page ul li, .page ol li {
+    padding-left: 21px;
+    overflow: hidden;
+}
+
+.page ul li, .page ol li{
+    background: url(img/lidisc.png) no-repeat left center;
+}
+
+
+.page h1, .page h2, .page h3, .page h4, .page ul, .page ol {
+    margin-bottom: 20px;
+}
+
+.page h2 {
+    font-size: 20pt;
+}
+
+.page h3 {
+    font-size: 15pt;
+}
+
+.page h4 {
+    font-size: 10pt;
+}
+
+/*page slider*/
+
+.page #slide_6 {
+    position: relative;
+    margin: 0 0 20px 0;
+    padding: 0;
+}
+
+.page #slide_6 li {
+    background: none;
+    padding: 0;
+}
+
+.page #slide_6 img {
+    margin: 0;
+    padding: 0;
+}
+
+.page #slide_6 .next, .page #slide_6 .prev {
+    background: url(img/arr.png);
+    opacity: 1;
+    height: 40px;
+    width: 40px;
+}
+
+.page #slide_6 .prev {
+    background-position: 0 40px;
+}
+
+.page *:last-child {
+    margin-bottom: 0;
+}
+
+
+
+/*---------PAGE END------------*/
+
+/*---------CONTACTS------------*/
+
+.page img.contact-map   {
+    width: 60%;
+    float: right;
+}
+
+.contact-form label {
+    display: block;
+    float: left;
+    clear: both;
+    width: 20%;
+    line-height: 32px;
+}
+
+.contact-form input[type=text], .contact-form textarea {
+    float: left;
+    width: 40%;
+    border-radius: 10px;
+    padding: 5px;
+    border: 1px solid #01899d;
+    margin-bottom: 20px !important;
+}
+
+.contact-form div {
+    float: left !important;
+    clear: both;
+}
+
+.contact-form span {
+}
+
+.contact-form input[type=text]:focus, .contact-form textarea:focus {
+    border: 1px solid #db1919;
+}
+
+.contact-form input[type=submit] {
+    float: left;
+    clear: both;
+    width: 16%;
+    height: 44px;
+    margin: 0;
+    background: url(img/send-but.png) no-repeat;
+    background-size: 100%;
+    border: none;
+    cursor: pointer;
+}
+
+input, textarea {
+    outline: none;
+}
+
+/*---------CONTACTS END------------*/
+
+/*---------BLOCKS ON MAIN PAGE------------*/
+
+.main-blocks {
+    overflow: hidden;
+}
+
+.main-block {
+    float: left;
+    width: 29%;
+    margin-right: 3.5%;
+    /*margin-bottom: 2.3vw;*/
+    margin-bottom: 29px;
+    position: relative;
+}
+
+.main-block img {
+    width: 100%;
+    float: left;
+}
+
+.main-block h2 {
+    margin-top: -10%;
+    /*font: 2.1vw/2.25vw "aavantebs";  */
+    font: 21pt/22pt "aavantebs";
+    background: #01899d;
+    display: block;
+    /*height: 4.45vw;  */
+    height: 60px;
+    width: 100%;
+    float: left;
+    vertical-align: text-bottom;
+}
+
+.main-block h2 a {
+    position: absolute;
+    text-transform: uppercase;
+    color: #fff;
+    margin-top: 7px;
+    margin-left: -1px;
+
+}
+
+.main-block h2 a:hover {
+    color: #db1919;
+}
+
+.main-block:nth-child(3n) {
+    margin-right: 0;
+}
+
+/*---------BLOCKS ON MAIN PAGE END------------*/
+
+/*---------LATEST NEWS------------*/
+
+.inner-content {
+    background: #fff;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.inner-content p:last-child {
+    margin-bottom: 0;
+}
+
+.main-news {
+    width: 65.5%;
+    float: left;
+}
+
+.main-news-block {
+    border-top: 3px dashed #f3eeea;
+    overflow: hidden;
+    margin-bottom: 16px;
+    padding-top: 16px;
+}
+
+.main-news-block:first-child {
+    border-top: none;
+    padding-top: 0;
+}
+
+.main-news-block:last-child {
+    margin-bottom: 0;
+}
+
+.main-news img {
+    width: 17.9%;
+    float: left;
+    margin-right: 3.25%;
+}
+
+.main-news a img {
+    width: 13%;
+    float: right;
+    margin-right: 0;
+}
+
+.main-news h3, .main-news p {
+    width: 62%;
+    float: left;
+    margin: 0;
+}
+
+.main-news h3 {
+    font-weight: normal;
+    font-size: 17pt;
+    line-height: 18pt;
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+
+.main-news h3:hover {
+    text-decoration: none;
+    color: #db1919;
+}
+
+/*---------LATEST NEWS END------------*/
+
+/*---------OUR MISSION------------*/
+
+.mission {
+    width: 31%;
+    float: right;
+}
+
+/*---------OUR MISSION END------------*/
+
+/*---------SPONSORS------------*/
+
+.sponsors {
+    float: left;
+    width: 100%;
+}
+
+.sponsors h1 {
+    margin-top: 30px;
+}
+
+.sponsors .inner-content {
+    background: transparent;
+    overflow: hidden;
+    padding: 0;
+}
+
+.sponsor {
+    width: 20%;
+    float: left;
+    line-height: auto;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 120px;
+}
+
+.sponsor img {
+    width: 80%;
+    vertical-align: middle;
+}
+
+.sponsors-bg {
+    width: 100%;
+    background: url(img/schedule-bg.png);
+    position: absolute;
+    z-index: -10;
+}
+
+/*---------SPONSORS END------------*/
+
+/* Footer
+-----------------------------------------------------------------------------*/
+.footer {
+    overflow: hidden;
+	min-width: 1000px;
+	position: relative;
+}
+
+.footer-content {
+    width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/*---------FOOTER SCHEDULE------------*/
+
+.footer .schedule {
+    margin-bottom: -30px;
+}
+
+.footer .schedule p {
+    display: block;
+    width: 1000px;
+    margin: 0 auto;
+    font-size: 33pt;
+    line-height: 47pt;
+    text-align: center;
+    font-family: "aavantebs";
+    color: #01899d;
+}
+
+.footer .schedule p span {
+    font-weight: bold;
+}
+
+/*---------FOOTER SCHEDULE END------------*/
+
+/*---------FOOTER MAP------------*/
+
+.footer-map {
+    overflow: hidden;
+    background: url(img/map.jpg) bottom no-repeat;
+    background-position: 0 61px;
+    padding-bottom: 26px;
+}
+
+.footer-map h1{
+    float: left;
+    margin: 30px 0 36px 0;
+    font-size: 29pt;
+}
+
+.footer-map .inner-content{
+    float: right;
+    width: 27%;
+}
+
+.footer-map img {
+    clear: both;
+    width: 16.5%;
+    padding: 20px;
+    background: #fff;
+    float: left;
+}
+
+/*---------FOOTER MAP END------------*/
+
+/*---------FOOTER MAIN------------*/
+
+.footer-main {
+    background: #01899d;
+    padding: 15px 0 8px 0;
+    margin-top: 50px;
+}
+
+.footer-main .footer-content ul, .footer-main .footer-content div {
+    float: left;
+    width: 40%;
+}
+
+.footer-content .facebook {
+    width: 20% !important;
+}
+
+.footer-main .footer-content ul {
+    width: 40%;
+}
+
+.footer-main .footer-content ul li {
+    width: 50%;
+    margin-bottom: 7px;
+}
+
+.footer-main .footer-content ul li a {
+    font: 12pt "ptsans";
+    color: #fff;
+}
+
+.footer-main .footer-content ul li a:hover {
+    color: #db1919;
+}
+
+.footer-main .footer-content ul li:nth-child(odd) {
+    float: left;
+}
+
+.footer-main .footer-content ul li:nth-child(even) {
+    float: right;
+}
+
+.footer-main p {
+    color: #fff;
+}
+
+.footer-main .address, .footer-main .phone {
+
+}
+
+.footer-main .address {
+    margin-bottom: 10px;
+}
+
+.footer-main .phone {
+    line-height: 32px;
+}
+
+.facebook img {
+    width: 66%;
+    float: right;
+    clear: both;
+}
+
+.facebook p {
+    margin-bottom: 10px;
+    float: right;
+}
+
+/*---------FOOTER MAIN END------------*/
+
+/*---------FOOTER BOTTOM------------*/
+
+.footer-bottom {
+    height: 30px;
+    background: url(img/schedule-bg.png);
+    padding: 10px;
+}
+
+.footer-bottom img {
+    float: left;
+    width: 2.1%;
+}
+
+.footer-bottom p {
+    float:  left;
+    font-family: 'aavantebs';
+    color: #01899d;
+    font-weight: bold;
+    font-size: 14pt;
+    line-height: 36px;
+    margin: 0 0 0 15px;
+}
+
+/*---------FOOTER BOTTOM END------------*/
+

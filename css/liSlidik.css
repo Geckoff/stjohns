@@ -1,0 +1,91 @@
+.slidik {
+	padding:0;
+	margin:0;
+	list-style:none;
+	width:100%;
+	position:absolute;
+    float: left;
+    z-index: 0 !important;
+	zoom:1;
+	font-size:0;
+	line-height:0;
+}
+
+.inner-content .slidik {
+    width: auto;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.inner-content .slidik li {
+    position: relative;
+}
+
+.inner-content .inner-slider {
+    overflow: hidden;
+    width: 100%;
+    text-align: center;
+}
+
+.inner-slider .slidik {
+    float: none;
+    display: inline-block;
+}
+
+.inner-slider * {
+    margin-bottom: 0 !important;
+}
+
+
+
+.slidik li {
+	padding:0;
+	margin:0;
+	list-style:none;
+	display:block;
+	//zoom:1;
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+}
+.slidik img {
+	width:100%;
+}
+
+.inner-content .slidik img {
+	width: auto;
+}
+
+.slidik li {
+	display:none;
+	z-index:1
+}
+.slidik li.show {
+	/*display:block;*/
+	z-index:0;
+}
+.captionContent { 
+	display:none;
+}
+.dottedItem {
+	cursor:pointer;
+}
+
+.thumbs {
+	width:100%;
+	max-width:600px;
+	margin:auto;
+	overflow:hidden;
+	position:relative;
+	z-index:3;
+}
+.thumbItem { float:left; opacity:0.7; cursor:pointer;}
+.thumbItem img {width:100% !important}
+.thumbItem.cur {opacity:1}
+
+.next,
+.prev,
+.dotted,
+.caption,
+.thumbs { visibility:hidden}

@@ -1,0 +1,1921 @@
+/*
+Theme Name: St. Matthew Medical Clinic
+Theme URI: https://fpro.by
+Author: Andrei Hetsevich
+Author URI: https://fpro.by
+Description: St. Matthew Medical Clinic Responsive Templeate
+Version: 1.0
+*/
+
+/* Eric Meyer's CSS Reset */
+
+@font-face {
+    font-family: 'aavantebs';
+    src: url('fonts/aavantebs-webfont.eot');
+    src: url('fonts/aavantebs-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/aavantebs-webfont.woff2') format('woff2'),
+         url('fonts/aavantebs-webfont.woff') format('woff'),
+         url('fonts/aavantebs-webfont.ttf') format('truetype'),
+         url('fonts/aavantebs-webfont.svg#pt_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'aavantebs';
+    src: url('fonts/aavantebs_extrabold-webfont.eot');
+    src: url('fonts/aavantebs_extrabold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/aavantebs_extrabold-webfont.woff2') format('woff2'),
+         url('fonts/aavantebs_extrabold-webfont.woff') format('woff'),
+         url('fonts/aavantebs_extrabold-webfont.ttf') format('truetype'),
+         url('fonts/aavantebs_extrabold-webfont.svg#pt_sansregular') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'aavantebs';
+    src: url('fonts/aavantebs_italic-webfont.eot');
+    src: url('fonts/aavantebs_italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/aavantebs_italic-webfont.woff2') format('woff2'),
+         url('fonts/aavantebs_italic-webfont.woff') format('woff'),
+         url('fonts/aavantebs_italic-webfont.ttf') format('truetype'),
+         url('fonts/aavantebs_italic-webfont.svg#pt_sansregular') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'ptsans';
+    src: url('fonts/pt-sans-webfont.eot');
+    src: url('fonts/pt-sans-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/pt-sans-webfont.woff2') format('woff2'),
+         url('fonts/pt-sans-webfont.woff') format('woff'),
+         url('fonts/pt-sans-webfont.ttf') format('truetype'),
+         url('fonts/pt-sans-webfont.svg#pt_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+p {
+    font: 14pt 'ptsans';
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+strong {
+    font-weight: bold;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    background: #f3eeea;
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* End of Eric Meyer's CSS Reset */
+
+html {
+    background: #f3eeea;
+	height: 100%;
+
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+	display: block;
+}
+body {
+	font: 12px/18px Arial, sans-serif;
+	height: 100%;
+    outline: none;
+}
+.wrapper {
+	width: 100%;
+	min-width: 1000px;
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'aavantebs';
+    color: #01899d;
+    font-weight: bold;
+}
+
+/* Header
+-----------------------------------------------------------------------------*/
+.header {
+	background: #01899d;
+    color: #01899d;
+    font-family: "aavantebs";
+}
+
+.not-main {
+/*    background: #01899d url(img/not-main-bg.jpg)  repeat-x 0 239%;*/
+}
+
+.header-content {
+    z-index: 3;
+    position: relative;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.upper-block {
+    background: #01899d;
+    border-top: 1px solid transparent;
+}
+
+.upper-block .logo {
+    position: absolute;
+    left: 20px;
+    margin-top: 14px;
+}
+
+.upper-block .logo-name {
+    display: block;
+    position: relative;
+    margin: 36px 0 0 143px;
+}
+
+/*---------HEADER MENU------------*/
+
+.upper-block ul.menu {
+
+    border: none;
+    outline: none;
+    overflow: hidden;
+    background: #fff;
+    display: block;
+    padding: 0 0 0 160px;
+}
+
+.upper-block ul.menu li {
+    float: left;
+    /*font: 1.5vw "aavantebs";
+    padding-right: 2vw;*/
+    text-transform: uppercase;
+    font: 16pt "aavantebs";
+    padding-right: 22px;
+}
+
+.upper-block ul.menu li a {
+    /*line-height: 4vw;*/
+    line-height: 55px;
+    color: #01899d;
+}
+
+.upper-block ul.menu li a:hover {
+    color: #db1919;
+}
+
+ul.sub-menu{
+    position: absolute;
+    z-index: 5;
+    background: #fff;
+    display: none;
+    width:  !important;
+    left: 327px;
+}
+
+ul.sub-menu li{
+    float: none !important;
+    text-transform: none !important;
+    text-align: center;
+    margin: 0;
+    padding: 0 11px !important;
+}
+
+ul.sub-menu li a{
+    line-height: 45px !important;
+}
+
+.upper-block ul.menu li:hover ul.sub-menu {
+    display: block;
+}
+
+/*---------HEADER MENU END------------*/
+
+/*---------QUOTATION------------*/
+
+.quot-block {
+    position: absolute;
+    z-index: 3;
+    width: 410px;
+    font: italic 14.5pt/25pt "aavantebs";
+    padding: 10px 10px 7px 10px;
+    background: rgba(1, 137, 157, 0.6);
+    bottom: 35px;
+}
+
+.quot-block span {
+    color: #fff;
+    text-align: left;
+}
+
+.quot-block span:last-child {
+    display: block;
+    text-align: right;
+    font-style: normal;
+}
+
+/*---------QUOTATION END------------*/
+
+/*---------APPOINTMENT SCHEDULE------------*/
+
+.schedule {
+    background: url(img/schedule-bg.png);
+}
+
+.schedule p {
+    display: block;
+    width: 1000px;
+    margin: 0 auto;
+    font-size: 33pt;
+    line-height: 47pt;
+    text-align: center;
+}
+
+.schedule p span {
+    font-weight: bold;
+}
+
+/*---------APPOINTMENT SCHEDULE END------------*/
+
+
+
+/* Middle
+-----------------------------------------------------------------------------*/
+.content {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 35px 0 0 0;
+    /*padding: 2.5vw 0 100px 0; */
+    overflow: hidden;
+}
+
+.content h1, .footer h1 {
+    font-size: 29pt;
+    display: inline-block;
+    margin-bottom: 23px;
+}
+
+.content p, .footer p, .page ul, .page ol, .page label, .page input, .page textarea, .page div {
+	font: 12pt/15pt "ptsans";
+    margin-bottom: 20px;
+}
+
+.content a {
+	color:  #01899d;
+}
+
+/*---------FIND US NOT MAIN PAGE BLOCK------------*/
+
+.findus {
+    margin-bottom: 20px;
+}
+
+.findus img {
+    max-width: 20%;
+}
+
+.findus .inner-content {
+    overflow: hidden;
+}
+
+
+.findus img {
+    float: left;
+    margin-right: 20px;
+}
+
+
+
+/*---------FIND US NOT MAIN PAGE BLOCK END------------*/
+
+/*---------ARTICLE PAGE------------*/
+
+.news {
+    width: 100%;
+    float: left;
+    margin-bottom: 20px;
+}
+
+.news-block {
+    border-top: 3px dashed #f3eeea;
+    overflow: hidden;
+    margin-bottom: 20px;
+    padding-top: 20px;
+}
+
+.news-block:first-child {
+    border-top: none;
+    padding-top: 0;
+}
+
+.news-block:last-child {
+    margin-bottom: 0;
+}
+
+.news img {
+    margin-bottom: 0.7vw;
+    width: 20%;
+    float: left;
+    margin-right: 2.25%;
+}
+
+.news a img {
+    width: 10%;
+    float: right;
+    margin-right: 0;
+}
+
+.news h3, .news p {
+    width: 100%;
+}
+
+.news h3 {
+    font-weight: normal;
+    font-size: 20pt;
+    text-decoration: underline;
+    margin-bottom: 20px;
+    padding-top: 2px;
+}
+
+.news h3:hover {
+    text-decoration: none;
+    color: #db1919;
+}
+
+.news .pagination {
+    text-align: center;
+    font: 24pt "aavantebs";
+    margin-top: 20px;
+}
+
+.news .pagination a:hover, .news .pagination span {
+    color:  #db1919;
+}
+
+.news .date {
+    float: right;
+    font: 10pt "ptsans";
+    line-height: 20pt;
+    color: #ADADAD;
+}
+
+.news .pagination .prev, .news .pagination .next {
+    visibility: visible;
+}
+
+/*---------ARTICLE PAGE END------------*/
+
+/*---------PAGE------------*/
+
+.page {
+    margin-bottom: 33px;
+}
+
+.page  img {
+    margin: 0 20px 20px 0;
+}
+
+.page .alignleft {
+    float: left;
+}
+
+.page .alignright {
+    float: right;
+    margin: 0 0 20px 20px;
+}
+
+.page .aligncenter {
+    margin: 0 auto 20px;
+    display: block;
+}
+
+.page ul li, .page ol li {
+    padding-left: 21px;
+    overflow: hidden;
+}
+
+.page ul li, .page ol li{
+    background: url(img/lidisc.png) no-repeat left center;
+}
+
+
+.page h1, .page h2, .page h3, .page h4, .page ul, .page ol {
+    margin-bottom: 20px;
+}
+
+.page h2 {
+    font-size: 20pt;
+}
+
+.page h3 {
+    font-size: 15pt;
+}
+
+.page h4 {
+    font-size: 10pt;
+}
+
+/*page slider*/
+
+.page #slide_6 {
+    position: relative;
+    margin: 0 0 20px 0;
+    padding: 0;
+}
+
+.page #slide_6 li {
+    background: none;
+    padding: 0;
+}
+
+.page #slide_6 img {
+    margin: 0;
+    padding: 0;
+}
+
+.page #slide_6 .next, .page #slide_6 .prev {
+    background: url(img/arr.png);
+    opacity: 1;
+    height: 40px;
+    width: 40px;
+}
+
+.page #slide_6 .prev {
+    background-position: 0 40px;
+}
+
+.page *:last-child {
+    margin-bottom: 0;
+}
+
+
+
+/*---------PAGE END------------*/
+
+/*---------CONTACTS------------*/
+
+.page img.contact-map   {
+    width: 60%;
+    float: right;
+}
+
+.contact-form label {
+    display: block;
+    float: left;
+    clear: both;
+    width: 20%;
+    line-height: 32px;
+}
+
+.contact-form input[type=text], .contact-form textarea {
+    float: left;
+    width: 40%;
+    border-radius: 10px;
+    padding: 5px;
+    border: 1px solid #01899d;
+    margin-bottom: 20px !important;
+}
+
+.contact-form div {
+    float: left !important;
+    clear: both;
+}
+
+.contact-form span {
+}
+
+.contact-form input[type=text]:focus, .contact-form textarea:focus {
+    border: 1px solid #db1919;
+}
+
+.contact-form input[type=submit] {
+    float: left;
+    clear: both;
+    width: 10%;
+    height: 29px;
+    margin: 0;
+    background: url(img/send-but.png) no-repeat;
+    background-size: 100%;
+    border: none;
+    cursor: pointer;
+}
+
+input, textarea {
+    outline: none;
+}
+
+/*---------CONTACTS END------------*/
+
+/*---------BLOCKS ON MAIN PAGE------------*/
+
+.main-blocks {
+    overflow: hidden;
+}
+
+.main-block {
+    float: left;
+    width: 31%;
+    margin-right: 3.5%;
+    /*margin-bottom: 2.3vw;*/
+    margin-bottom: 29px;
+    position: relative;
+}
+
+.main-block img {
+    width: 100%;
+    float: left;
+}
+
+.main-block h2 {
+    margin-top: -10%;
+    /*font: 2.1vw/2.25vw "aavantebs";  */
+    font: 21pt/22pt "aavantebs";
+    background: rgba(1, 137, 157, 0.85);
+    display: block;
+    /*height: 4.45vw;  */
+    height: 60px;
+    width: 100%;
+    float: left;
+    vertical-align: text-bottom;
+}
+
+.main-block h2 a {
+    position: absolute;
+    text-transform: uppercase;
+    color: #fff;
+    margin-top: 7px;
+    margin-left: -1px;
+
+}
+
+.main-block h2 a:hover {
+    color: #db1919;
+}
+
+.main-block:nth-child(3n) {
+    margin-right: 0;
+}
+
+/*---------BLOCKS ON MAIN PAGE END------------*/
+
+/*---------LATEST NEWS------------*/
+
+.inner-content {
+    background: #fff;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.inner-content p:last-child {
+    margin-bottom: 0;
+}
+
+.main-news {
+    width: 65.5%;
+    float: left;
+}
+
+.main-news-block {
+    border-top: 3px dashed #f3eeea;
+    overflow: hidden;
+    margin-bottom: 16px;
+    padding-top: 16px;
+}
+
+.main-news-block:first-child {
+    border-top: none;
+    padding-top: 0;
+}
+
+.main-news-block:last-child {
+    margin-bottom: 0;
+}
+
+.main-news img {
+    width: 17.9%;
+    float: left;
+    margin-right: 3.25%;
+}
+
+.main-news a img {
+    width: 13%;
+    float: right;
+    margin-right: 0;
+}
+
+.main-news h3, .main-news p {
+    width: 62%;
+    float: left;
+    margin: 0;
+}
+
+.main-news h3 {
+    font-weight: normal;
+    font-size: 17pt;
+    line-height: 18pt;
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+
+.main-news h3:hover {
+    text-decoration: none;
+    color: #db1919;
+}
+
+/*---------LATEST NEWS END------------*/
+
+/*---------OUR MISSION------------*/
+
+.mission {
+    width: 31%;
+    float: right;
+}
+
+/*---------OUR MISSION END------------*/
+
+/*---------SPONSORS------------*/
+
+.sponsors {
+    float: left;
+    width: 100%;
+}
+
+.sponsors h1 {
+    margin-top: 30px;
+}
+
+.sponsors .inner-content {
+    background: transparent;
+    overflow: hidden;
+    padding: 0;
+}
+
+.sponsor {
+    width: 20%;
+    float: left;
+    line-height: auto;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 120px;
+}
+
+.sponsor img {
+    width: 80%;
+    vertical-align: middle;
+}
+
+.sponsors-bg {
+    width: 100%;
+    background: url(img/schedule-bg.png);
+    position: absolute;
+    z-index: -10;
+}
+
+/*---------SPONSORS END------------*/
+
+/* Footer
+-----------------------------------------------------------------------------*/
+.footer {
+    overflow: hidden;
+	min-width: 1000px;
+	position: relative;
+}
+
+.footer-content {
+    width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/*---------FOOTER SCHEDULE------------*/
+
+.footer .schedule {
+    margin-bottom: -30px;
+}
+
+.footer .schedule p {
+    display: block;
+    width: 1000px;
+    margin: 0 auto;
+    font-size: 33pt;
+    line-height: 47pt;
+    text-align: center;
+    font-family: "aavantebs";
+    color: #01899d;
+}
+
+.footer .schedule p span {
+    font-weight: bold;
+}
+
+/*---------FOOTER SCHEDULE END------------*/
+
+/*---------FOOTER MAP------------*/
+
+.footer-map {
+    overflow: hidden;
+    background: url(img/map.jpg) bottom no-repeat;
+    background-size: 1500px;
+    padding-bottom: 26px;
+}
+
+.footer-map h1{
+    float: left;
+    margin: 30px 0 36px 0;
+}
+
+.footer-map .inner-content{
+    float: right;
+    width: 27%;
+}
+
+.footer-map img {
+    clear: both;
+    width: 16.5%;
+    padding: 20px;
+    background: #fff;
+    float: left;
+}
+
+/*---------FOOTER MAP END------------*/
+
+/*---------FOOTER MAIN------------*/
+
+.footer-main {
+    background: #01899d;
+    padding: 15px 0 8px 0;
+    margin-top: 50px;
+}
+
+.footer-main .footer-content ul, .footer-main .footer-content div {
+    float: left;
+    width: 27%;
+}
+
+.footer-content .facebook {
+    width: 19% !important;
+}
+
+.footer-main .footer-content ul {
+    width: 54%;
+}
+
+.footer-main .footer-content ul li {
+    width: 50%;
+    margin-bottom: 7px;
+}
+
+.footer-main .footer-content ul li a {
+    font: 12pt "ptsans";
+    color: #fff;
+}
+
+.footer-main .footer-content ul li a:hover {
+    color: #db1919;
+}
+
+.footer-main .footer-content ul li:nth-child(odd) {
+    float: left;
+}
+
+.footer-main .footer-content ul li:nth-child(even) {
+    float: right;
+}
+
+.footer-main p {
+    color: #fff;
+}
+
+.footer-main .address, .footer-main .phone {
+    padding-left: 40px;
+}
+
+.footer-main .address {
+    background: url(img/address-pic.png)  no-repeat left center;
+    background-size: 12%;
+    margin-bottom: 10px;
+}
+
+.footer-main .phone {
+    background: url(img/phone-pic.png)  no-repeat left center;
+    background-size: 12%;
+    line-height: 32px;
+}
+
+.facebook img {
+    width: 66%;
+    float: right;
+    clear: both;
+}
+
+.facebook p {
+    margin-bottom: 10px;
+    float: right;
+}
+
+/*---------FOOTER MAIN END------------*/
+
+/*---------FOOTER BOTTOM------------*/
+
+.footer-bottom {
+    height: 30px;
+    background: url(img/schedule-bg.png);
+    padding: 10px;
+}
+
+.footer-bottom img {
+    float: left;
+    width: 2.1%;
+    margin-top: 6px;
+}
+
+.footer-bottom p {
+    float:  left;
+    font-family: 'aavantebs';
+    color: #01899d;
+    font-weight: bold;
+    font-size: 14pt;
+    line-height: 36px;
+    margin: 0 0 0 15px;
+}
+
+/*---------FOOTER BOTTOM END------------*/
+
+/*media*/
+
+@media screen and (min-width:1500px) {
+.header-content, .content, .footer-content {
+    width: 71.4%;
+}
+
+.not-main {
+
+}
+
+.upper-block ul.menu li {
+    font: 1.5vw "aavantebs";
+    padding-right: 2vw;
+}
+
+.upper-block ul.menu li a {
+    line-height: 4vw;
+}
+
+.main-block h2 a {
+    margin-top: 0.5vw;
+    margin-left: -0.1vw;
+
+}
+
+.main-block {
+    margin-bottom: 2.3vw;
+}
+
+.main-block h2 {
+    font: 2.1vw/2.25vw "aavantebs";
+    height: 4.45vw;
+}
+
+.content {
+    padding: 2.5vw 0 0 0;
+}
+
+ul.sub-menu li a{
+    line-height: 3vw !important;
+}
+
+ul.sub-menu {
+    left: 31.3%;
+}
+
+/*news section page*/
+
+.news, .findus, .news-block, .news h3 {
+    margin-bottom: 1.5vw;
+}
+
+.news h3 {
+    font-size: 1.9vw;
+    padding-top: 0.3vw
+}
+
+.news-block {
+    padding-top: 1.5vw;
+}
+
+.news .pagination {
+    font: 2.3vw "aavantebs";
+    margin-top: 1.5vw;
+}
+
+.news .date {
+    font: 1vw "ptsans";
+    line-height: 2vw;
+}
+/*latest news & mission blocks*/
+
+.content h1, .footer h1 {
+    font-size: 2.7vw;
+    margin-bottom: 1.9vw;
+}
+
+.content p,  .footer p, .page ol, .page ul, .page input, .page textarea, .page label, .page div {
+	font: 1.2vw/1.5vw "ptsans";
+    margin-bottom: 1.5vw;
+}
+
+.page ul.slidik {
+    margin-bottom: 1.5vw !important;
+}
+
+.page .inner-slider ul.slidik {
+    margin-bottom: 0 !important;
+}
+
+.main-news h3 {
+    font-size: 1.7vw;
+    margin-bottom: 0.8vw;
+    line-height: 1.8vw;
+}
+
+.main-news a img {
+    margin-top: 1vw;
+}
+
+.main-news-block {
+    border-top: 0.25vw dashed #f3eeea;
+    margin-bottom: 1.2vw;
+    padding-top: 1.15vw;
+}
+
+.inner-content {
+    background: #fff;
+    padding: 1.5vw;
+}
+
+.sponsor {
+    line-height: 9vw;
+}
+
+/*footer map*/
+
+.footer-map {
+    padding-bottom: 0.75vw;
+    background-size: 100%;
+}
+
+.footer-map h1{
+    margin: 2.3vw 0 2.8vw 0 ;
+}
+
+.footer-map img {
+    padding: 1.4vw;
+}
+
+/*footer main*/
+
+.footer-main {
+    padding: 1vw 0 0.5vw 0;
+    margin-top: 4.125vw;
+}
+
+.footer-main .footer-content ul li {
+    width: 50%;
+    margin-bottom: 0.45vw;
+}
+
+.footer-main .address, .facebook p {
+    margin-bottom: 0.7vw;
+}
+
+.footer-main .phone {
+    line-height: 2.4vw;
+}
+
+.footer-main .footer-content ul li a {
+    font-size: 1.2vw;
+}
+
+.footer-main .address, .footer-main .phone {
+    background-size: 1.9vw;
+}
+
+/*footer bottom*/
+
+.footer-bottom {
+    height: 2.6vw;
+    padding: 0.55vw;
+}
+
+.footer-bottom p {
+    font-family: 'aavantebs';
+    font-weight: bold;
+    font-size: 1.4vw;
+    line-height: 2.6vw;
+    margin: 0 0 0 1.5vw;
+}
+
+/*page*/
+
+.page {
+    margin-bottom: 2.5vw;
+}
+
+.page h2 {
+  font-size: 2.1vw;
+}
+
+.page h3 {
+  font-size: 1.6vw;
+}
+
+.page h4 {
+  font-size: 1.1vw;
+}
+
+.page  img {
+    margin: 0 1.5vw 1.5vw 0;
+}
+
+.page .alignleft {
+    float: left;
+}
+
+.page .alignright {
+    float: right;
+    margin: 0 0 1.5vw 1.5vw;
+}
+
+.page .aligncenter {
+    margin: 0 auto 1.5vw;
+    display: block;
+}
+
+.page h1, .page h2, .page h3, .page h4, .page ul, .page ol {
+    margin-bottom: 1.5vw;
+}
+
+.page label {
+    line-height: 2.05vw;
+}
+
+.contact-form input[type=submit] {
+    height: 2vw;
+}
+
+
+}
+
+@media screen and (min-width:1550px) {
+
+ul.sub-menu {
+    left: 32%;
+}
+
+}
+
+@media screen and (min-width:1600px) {
+
+ul.sub-menu {
+    left: 31.5%;
+}
+
+}
+
+@media screen and (min-width:1650px) {
+
+ul.sub-menu {
+    left: 30.9%;
+}
+
+}
+
+@media screen and (min-width:1700px) {
+
+ul.sub-menu {
+    left: 30.5%;
+}
+
+}
+
+
+
+@media screen and (min-width:1750px) {
+
+.content p,  .footer p, .page ul, .page ol, .page input, .page textarea, .page label, .page div {
+	font: 0.9vw/1.25vw "ptsans";
+    margin-bottom: 1.25vw;
+}
+
+.content {
+    padding: 1.1vw 0 0 0;
+}
+
+.inner-content {
+    background: #fff;
+    padding: 1.2vw;
+}
+
+.content h1 {
+    font-size: 2.4vw;
+    line-height: 2.4vw;
+    margin-bottom: 0.75vw;
+}
+
+ul.sub-menu {
+    left: 29.5%;
+}
+
+/*news section page*/
+
+.news, .page {
+    width: 73%;
+    float: left;
+}
+
+.news h3 {
+    font-size: 1.6vw;
+    margin-bottom: 1.25vw;
+}
+
+.news .date {
+    font: 0.9vw "ptsans";
+    line-height: 1.7vw;
+}
+
+.findus {
+    width: 24%;
+    float: right;
+}
+
+.findus img {
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 1.5vw;
+}
+
+/*main blocks & mission*/
+
+.main-blocks {
+    width: 72.4%;
+    float: left;
+}
+
+.main-block {
+    margin-bottom: 1.9vw;
+}
+
+.main-block h2 {
+    font: 1.6vw/1.89vw "aavantebs";
+    height: 3.4vw;
+}
+
+.main-block h2 a {
+    margin-top: 0.1vw;
+    margin-left: -0.1vw;
+}
+
+.mission {
+    width: 25%;
+}
+
+.mission h1 {
+    display: none;
+}
+
+/*news*/
+
+.main-news {
+    width: 47.5%;
+}
+
+.main-news h3 {
+    font-size: 1.35vw;
+    line-height: 1.45vw;
+    margin-bottom: 0.2vw;
+}
+
+.main-news-block p {
+    margin-bottom: 0;
+    width: 66%;
+}
+
+.main-news img {
+    width: 16%;
+}
+
+.main-news a img {
+    margin-top: 0vw;
+}
+
+/*sponsors*/
+
+.sponsors {
+    width: 50%;
+    float: right;
+}
+
+.sponsor {
+    width: 50%;
+    height: 33%;
+}
+
+.sponsor:last-child {
+    width: 100%;
+}
+
+.sponsors h1 {
+    margin-top: 0;
+}
+
+.sponsor a {
+    display: block;
+	height: 100%;
+}
+
+.sponsor img {
+    width: auto;
+	height: 92%;
+}
+
+
+/*footer*/
+
+.sponsors-bg {
+    display: none;
+}
+
+.footer h1 {
+    font-size: 2.4vw;
+    margin: 1.9vw 0 2.85vw 0;
+}
+
+.footer-map {
+    padding-bottom: 1vw;
+}
+
+.footer-main .footer-content ul li a {
+    font-size: 0.9vw;
+}
+
+.footer-main {
+    padding: 1vw 0 0.2vw 0;
+}
+
+.footer-main .address, .footer-main .phone  {
+    background-size: 8.5%;
+}
+
+.facebook p {
+    margin-bottom:0.5vw;
+}
+
+.facebook img {
+    width: 56%;
+}
+
+.footer-main {
+    margin-top: 3vw;
+}
+
+.footer-bottom {
+    height: 2vw;
+}
+
+.footer-bottom img {
+    width: 1.9%;
+}
+
+.footer-bottom p {
+    margin-left: 1%;
+    font: 1.2vw/2vw "aavantebs";
+    font-weight: bold;
+    height: 3.4vw;
+}
+
+/*page*/
+
+.page {
+    margin-bottom: 1.3vw;
+}
+
+.page h2 {
+    font-size: 1.8vw
+}
+
+.page h3 {
+    margin-bottom: 1.2vw;
+}
+
+.page h4 {
+    margin-bottom: 0.9vw;
+}
+
+.page ul.slidik {
+    margin-bottom: 1.25vw !important;
+}
+
+.page label {
+    line-height: 1.8vw;
+}
+
+.contact-form input[type=submit] {
+    height: 1.5vw;
+}
+
+
+}
+
+@media screen and (min-width:1800px) {
+
+ul.sub-menu {
+    left: 30.5%;
+}
+
+}
+
+@media screen and (min-width:1850px) {
+
+ul.sub-menu {
+    left: 29.9%;
+}
+
+}
+
+@media screen and (min-width:1900px) {
+
+ul.sub-menu {
+    left: 29.4%;
+}
+
+}
+
+@media screen and (min-width:1950px) {
+
+ul.sub-menu {
+    left: 29.2%;
+}
+}
+
+@media screen and (max-width:1000px) {
+
+.slidik {
+    width: 1000px !important;
+}
+
+.page .slidik {
+    width: 100% !important;
+}
+
+}
+
+@media screen and (max-width:700px) {
+
+.wrapper {
+}
+
+.header{
+    background: none;
+}
+
+.header-content {
+    display: block;
+    background: #01899d;
+}
+
+.sponsors-bg, .main-blocks {
+    display: none !important;
+}
+
+ul.slidik, .quot-block {
+    display: none;
+}
+
+.page .inner-slider ul.slidik{
+    width: 100%;
+    margin-bottom: 0 !important;
+}
+
+.page .inner-slider ul.slidik img {
+    width: 100%;
+}
+
+.upper-block {
+    background: #01899d url(img/mobile-logo.png) no-repeat;
+    background-size: 100%;
+    padding-top: 45vw;
+}
+
+.upper-block .logo, .upper-block .logo-name {
+    display: none;
+}
+ /*--MOBILE MENU--*/
+
+ /*reset*/
+
+
+
+ .upper-block ul.menu {
+    overflow: hidden;
+    display: block;
+    background: none;
+    padding: 0;
+}
+
+.upper-block ul.menu li {
+    float: none;
+    text-transform: uppercase;
+    font: 16pt "aavantebs";
+    padding-right: 0;
+}
+
+.upper-block ul.menu li a {
+    /*line-height: 4vw;*/
+    font-size: 12vw;
+    line-height: normal;
+    color: #01899d;
+}
+
+.upper-block ul.menu li a:hover {
+    color: #db1919;
+}
+
+ul.sub-menu{
+    position: inherit;
+    z-index: 5;
+    background: none;
+    display: block;
+    left: auto;
+}
+
+ul.sub-menu li{
+    padding: 4vw 0 !important;
+    text-transform: none !important;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+ul.sub-menu li a{
+    line-height: normal;
+}
+
+.upper-block ul.menu li:hover ul.sub-menu {
+    display: none;
+}
+
+
+
+ /*reset*/
+
+
+
+
+
+.menu {
+     margin-bottom: 8vw;
+     padding: 0;
+     text-align: center;
+}
+
+
+.menu>li{
+   margin-bottom: 1px;
+   list-style: none;
+}
+
+.sub-menu-li {
+    background: #fff;
+}
+
+.menu li.sub-menu-li{
+   height: auto;
+   background: #fff;
+}
+.menu li.sub-menu-li span{
+    display: none;
+   float: right;
+   font-size: 10vw;
+   width: 40px;
+   text-align: center;
+   padding-top: 8px;
+   cursor: pointer;
+   font-weight: 300;
+   color: #ADADAD;
+   position: absolute;
+   right: 10px;
+}
+.menu a{
+   text-align: center;
+   font-size: 14px;
+   text-decoration: none;
+   font-family: 'Verdana';
+}
+.menu>li>a{
+   padding: 2.5vw;
+   background: #fff;
+   display: block;
+   font-size: 14px;
+}
+.menu ul{
+   display: none;
+   margin: 6px 0;
+   padding: 0;
+}
+.menu li:hover>a{
+   color: #EF0505;
+   transition: color 0.5s ease;
+}
+.menu ul li{
+   font-weight: 300;
+   list-style: none;
+}
+
+ul.sub-menu {
+    margin: 0;
+}
+
+ul.sub-menu li a {
+    line-height: 16vw !important;
+}
+
+ul.sub-menu li:last-child {
+  padding-bottom: 4vw !important;
+}
+
+/*--MOBILE MENU END--*/
+
+.content {
+    padding: 0;
+}
+
+.content h1, .footer h1 {
+    line-height: 14vw;
+    font-size: 14vw;
+    display: block;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 3vw;
+}
+
+.content p, .footer p, .page ul, .page ol,  .page input, .page textarea, .page label, .page div {
+	font: 10vw/11vw "ptsans";
+    margin-bottom: 6vw;
+}
+
+.inner-content {
+    padding: 8vw 2vw;
+}
+
+
+
+
+/*schedule*/
+
+.schedule {
+    margin-bottom: 8vw;
+    padding: 2vw 0;
+}
+
+.schedule p, .footer .schedule p {
+    font-size: 12vw;
+    line-height: 13vw;
+}
+
+/*mission*/
+
+.mission {
+    width: 100%;
+    margin-bottom: 8vw;
+}
+
+/*news section page*/
+
+.findus {
+    display: none;
+}
+
+.news img {
+    width: 33%;
+}
+
+.news a img {
+    width: 40%;
+    margin: 0 auto;
+    display: block;
+    float: none;
+}
+
+.news .date {
+    display: none;
+}
+
+.news h3 {
+    font-size: 13vw;
+    line-height: 15vw;
+}
+
+.news .pagination {
+    font: 17vw "aavantebs";
+}
+
+.footer .schedule {
+    margin: 12vw 0;
+}
+
+/*news*/
+
+.main-news {
+    width: 100%;
+    margin-bottom: 8vw;
+}
+
+.main-news-block, .news-block {
+    border-top: 2vw dashed #f3eeea;
+    overflow: hidden;
+    margin-bottom: 9vw;
+    padding-top: 9vw;
+}
+
+.main-news-block:first-child {
+    border-top: none;
+    padding-top: 0;
+}
+
+.main-news-block:last-child {
+    margin-bottom: 0;
+}
+
+.main-news img {
+    width: 26%;
+    margin: 0 4vw 0 0;
+    float: left;
+}
+
+.main-news a img {
+    display: none;
+}
+
+.main-news p {
+    float: none;
+    width: 100%;
+    clear: right;
+    margin: 0;
+}
+
+.main-news h3 {
+    font-size: 11vw;
+    line-height: 12vw;
+    float: right;
+    width: 70%;
+}
+
+/*sponsors*/
+
+
+.sponsor {
+    width: 50%;
+    margin-bottom: 6vw;
+}
+
+.sponsor:last-child {
+    width: 100%;
+}
+
+.sponsor:last-child img {
+    width: 50%;
+}
+
+/*footer*/
+
+.footer-map {
+    background: none;
+}
+
+.footer-map h1 {
+    float: none;
+}
+
+.footer-map .inner-content{
+    width: 100%;
+    float: none;
+}
+
+.footer-map img {
+    width: 96%;
+    padding: 3vw;
+    background: #fff;
+}
+
+.footer-main {
+
+}
+
+.footer-main {
+    padding: 6vw;
+}
+
+.footer-main .footer-content ul, .footer-main .footer-content div, .footer-content .facebook {
+    float: left;
+    width: 93% !important;
+}
+
+.footer-main .footer-content ul {
+    margin-bottom: 4vw;
+}
+
+.footer-main .footer-content ul li {
+    width: 50%;
+    margin-bottom: 4vw;
+}
+
+.footer-main .footer-content ul li a {
+    font: 9vw "ptsans";
+    color: #fff;
+}
+
+.footer-main .footer-content ul li a:hover {
+    color: #db1919;
+}
+
+.footer-main .footer-content ul li:nth-child(odd) {
+    float: left;
+}
+
+.footer-main .footer-content ul li:nth-child(even) {
+    float: right;
+}
+
+.footer-main p {
+    font-size: 9vw;
+    color: #fff;
+}
+
+.footer-main .address, .footer-main .phone {
+    padding-left: 25vw;
+}
+
+.footer-main .address {
+    background: url(img/address-pic.png)  no-repeat left center;
+    background-size: 12%;
+    margin-bottom: 10vw;
+}
+
+.footer-main .phone {
+    background: url(img/phone-pic.png)  no-repeat left center;
+    background-size: 12%;
+    line-height: 18vw;
+}
+
+.facebook img {
+    width: 48%;
+    float: none;
+}
+
+.facebook a{
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+}
+
+.facebook p {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.footer-bottom {
+    display: none;
+}
+
+/*page*/
+
+.page .alignright, .page .alignleft {
+    float: none;
+    margin: 0 0 6vw 0;
+}
+
+.page #slide_6 .next, .page #slide_6 .prev {
+    background: url(img/arr_mobile.png);
+    opacity: 1;
+    height: 240px;
+    width: 60px;
+    border-radius: 0;
+    top: 34%;
+}
+
+.page #slide_6 .prev {
+    background-position: 0 240px;
+}
+
+.page img {
+    width: 100%;
+}
+
+.page h2 {
+    font-size: 11vw;
+}
+
+.page h3 {
+    font-size: 9vw;
+}
+
+.page h4 {
+    font-size: 7vw;
+}
+
+.page h2, .page h3, .page h4, .page ul, .page ol, .page img, .page label {
+    margin-bottom: 6vw;
+    text-align: center;
+}
+
+.page .slidik {
+    margin-bottom: 6vw !important;
+}
+
+.page ul li, .page ol li{
+    padding-left: 9vw;
+    background: url(img/lidisc_mobile.png) no-repeat left 60%;
+}
+
+
+/*contacts*/
+
+.page img.contact-map {
+    width: 100%;
+}
+
+.contact-form input[type=text], .contact-form textarea, .contact-form label {
+    width: 100% !important;
+}
+
+.contact-form input[type=submit] {
+    float: none;
+    display: block;
+    margin: 0 auto;
+    width: 40%;
+    height: 20vw;
+}
+
+.contact-form input[type=text], .contact-form textarea {
+    margin-bottom: 6vw !important;
+}
+
+.contact-form p{
+    margin-bottom: 0;
+}
+
+.contact-form span {
+    line-height: 12vw;
+    margin-bottom: 6vw !important;
+}
+
+}
