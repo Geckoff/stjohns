@@ -21,12 +21,12 @@ jQuery(document).ready(function(){
 $(document).ready(function(){
     if (window.screen.width < 700) exit;
     $('.main-block').each(function(){
-        var string = $(this).children("h2").children("a").html();
+        var string = $(this).children("h2").html();
         stringar = string.split(' ');
         stringar.push(stringar[stringar.length - 1]);
         stringar[stringar.length - 2] = "<br>";
         string = stringar.join(' ');
-        $(this).children("h2").children("a").html(string);
+        $(this).children("h2").html(string);
     });
 });
 

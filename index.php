@@ -13,10 +13,14 @@
             <?php $blocks = new WP_Query($args); ?>
             <?php if ($blocks->have_posts()): ?>
             <?php while ($blocks->have_posts()): $blocks->the_post(); ?>
-                <div class="main-block">
-                    <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail();?></a>
-                    <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-                </div>
+                <a class="main-block-a"  href="<?php the_permalink(); ?>">
+                    <div class="main-block">
+                        <div class="main-block-img">
+                            <?php the_post_thumbnail('full');?>
+                        </div>
+                        <h2><?php the_title(); ?></h2>
+                    </div>
+                </a>
             <?php endwhile; ?>
             <?php else: ?>
             <?php endif; ?>
