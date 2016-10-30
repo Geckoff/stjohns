@@ -568,16 +568,66 @@ input, textarea {
 
 .main-block {
     float: left;
-    width: 31%;
-    margin-right: 3.5%;
     /*margin-bottom: 2.3vw;*/
     margin-bottom: 29px;
     position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.main-block-a {
+    display: block;
+    width: 31%;
+    overflow: hidden;
+    float: left;
+    margin-right: 3.5%;
+}
+
+.main-block-a:nth-child(3n) {
+    margin-right: 0;
+}
+
+.main-block-img {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.main-block .main-block-img:before {
+    background: #fff;
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.3;
+    z-index: 3;
+    display: block;
+    transition-duration: 0.3s;
+}
+
+.main-block-a:hover .main-block-img:before {
+    opacity: 0;
+}
+
+.main-block-a img {
+    transition-duration: 0.3s;
+}
+
+.main-block-a:hover img {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+
 }
 
 .main-block img {
     width: 100%;
     float: left;
+    position: relative;
 }
 
 .main-block h2 {
@@ -591,6 +641,12 @@ input, textarea {
     width: 100%;
     float: left;
     vertical-align: text-bottom;
+    color: #fff;
+    text-transform: uppercase;
+    padding-top: 7px;
+    padding-left: -1px;
+    position: relative;
+    z-index: 3;
 }
 
 .main-block h2 a {
@@ -606,9 +662,7 @@ input, textarea {
     color: #db1919;
 }
 
-.main-block:nth-child(3n) {
-    margin-right: 0;
-}
+
 
 /*---------BLOCKS ON MAIN PAGE END------------*/
 
@@ -918,8 +972,8 @@ input, textarea {
 }
 
 .main-block h2 a {
-    margin-top: 0.5vw;
-    margin-left: -0.1vw;
+    padding-top: 0.5vw;
+    padding-left: -0.1vw;
 
 }
 
@@ -1227,8 +1281,8 @@ ul.sub-menu {
 }
 
 .main-block h2 a {
-    margin-top: 0.1vw;
-    margin-left: -0.1vw;
+    padding-top: 0.1vw;
+    padding-left: -0.1vw;
 }
 
 .mission {
