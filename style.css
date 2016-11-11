@@ -624,12 +624,12 @@ input, textarea {
 }
 
 .main-block-a:hover img {
+    will-change: transform;
     -moz-transform: scale(1.11);
     -webkit-transform: scale(1.11);
     -o-transform: scale(1.11);
     -ms-transform: scale(1.11);
-    transform: scale(1.11);
-
+    transform: scale(1.11);                
 }
 
 .main-block img {
